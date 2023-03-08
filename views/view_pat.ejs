@@ -1,0 +1,80 @@
+<Html> 
+    <Head>  
+        <link rel="stylesheet" href="css/style.css">   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+    </Head>  
+    <style>
+        
+        
+.btn
+{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.h
+{
+    position: absolute;
+    left: 40%;
+    top: 3%;
+}
+.panel
+{
+    position:absolute;
+    color:aquamarine;
+    width:100%;
+    height:15%;
+    background-color: aqua;
+    opacity:70%;
+}
+.f
+{
+    position: absolute;
+    left: 40%;
+}
+table
+{
+    font-family: arial;
+    border-collapse: collapse;
+    background-color:#13edac;
+    border-spacing:10px ;
+    opacity:80%;
+    width: 60%;
+    position:relative;
+    left:20%;
+    top:20%;
+}
+td{
+    color: black;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
+    </style>
+    <Body>  
+        <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="panel">test</div>
+        <h2 class="h">Patient Details</h2>
+        <a type="button" class="btn fa fa-home" href="/front" style="top:3.5%; left:.5%"></a>
+        <table>
+        <tr >
+            <td >NAME:</td> 
+            <td >DISEASED ORGAN:</td> 
+         </tr> 
+        </table>
+        <%for(var i=0;i< pats.length;i++){%>
+        <table>
+            <tr >
+                <%if(pats[i].Type==false){%>
+                    <td ><%=pats[i].name%></td> 
+                    <td ><%=pats[i].Organ%></td> 
+                    <%}%>
+             </tr> 
+        </table>
+        <%}%>
+    </Body>  
+    </Html>  

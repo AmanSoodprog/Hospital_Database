@@ -1,0 +1,38 @@
+       
+.btn
+{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.h
+{
+    position: absolute;
+    left: 40%;
+    top: 3%;
+}
+.panel
+{
+    position:absolute;
+    color:aquamarine;
+    width:100%;
+    height:15%;
+    background-color: aqua;
+    opacity:70%;
+}
+.panel_1
+{
+    position:absolute;
+    color:aquamarine;
+    top: 23%;
+    left: 24%;
+    width:50%;
+    height:50%;
+    background-color: aqua;
+    opacity:20%;
+}
+.f
+{
+    position: absolute;
+    left: 40%;
+}
